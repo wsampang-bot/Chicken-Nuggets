@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Golden Nugget | Ultimate Chicken Nugget Guide</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span>🍗</span>
+        <span>The Golden Nugget</span>
+        <span class="logo-badge">Crispy</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="history.html">History & Science</a></li>
+          <li><a href="recipes.html">Sauces & Recipes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Bite into Pure <span class="highlight">Golden Crunch</span></h1>
+        <p>
+          Welcome to the ultimate shrine dedicated to humanity's favorite golden-fried creation: the chicken nugget. 
+          Crispy on the outside, succulent and tender on the inside, and built to dive into rich dipping sauces.
+        </p>
+        <div class="hero-actions">
+          <a href="recipes.html" class="btn btn-primary">Find Your Sauce 🍯</a>
+          <button class="btn btn-secondary sound-crunch-btn">Hear the Crunch! 🔊</button>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="floating-badge">🔥 Fresh & Hot</div>
+        <div class="hero-image-card">
+          <img src="chicken-nuggets.png" alt="A freshly fried, golden crispy platter of delicious chicken nuggets" id="hero-nugget-img">
+          <div class="image-tag">
+            <span>✨</span> 100% Crispy Perfection
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Nuggets Reign Supreme -->
+    <section>
+      <div class="section-title">
+        <h2>The Anatomy of Greatness</h2>
+        <p>What makes the humble nugget an undisputed global comfort food?</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3>The Glass-Crisp Shell</h3>
+          <p>
+            Whether coated with seasoned cornstarch batter or seasoned panko breadcrumbs, the exterior provides that irresistible auditory snap when you take a bite.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🍗</div>
+          <h3>Juicy, Tender Core</h3>
+          <p>
+            High heat seals moisture instantly, keeping 100% white breast meat or seasoned ground chicken succulent and piping hot.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🥫</div>
+          <h3>The Sauce Vessel</h3>
+          <p>
+            Engineered with natural crevices and textured ridges specifically designed to scoop up the maximum payload of BBQ, honey mustard, or sweet & sour.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Dipping Sauce Calculator Widget -->
+    <section class="widget-box">
+      <h3>🧮 The Dipping Sauce Ratio Calculator</h3>
+      <p style="color: #78350f; max-width: 600px; margin: 0 auto;">
+        Running out of sauce midway through a batch is a tragedy. Tell us how many nuggets you're having, and our algorithm will calculate your sauce supply!
+      </p>
+
+      <div class="calculator-controls">
+        <div class="calc-input-group">
+          <label for="nugget-count">Nuggets to eat:</label>
+          <input type="number" id="nugget-count" min="1" max="100" value="10">
+        </div>
+      </div>
+
+      <div class="calc-result" id="sauce-result">
+        Recommended: <strong>3 Sauce Tubs</strong> 🍯
+      </div>
+      <p id="crunch-advice" style="margin-top: 0.8rem; font-size: 0.95rem; color: #78350f; font-weight: 500;">
+        The classic meal size. We recommend 1 sweet and 1 savory/tangy sauce!
+      </p>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <h2>Curious Where Chicken Nuggets Came From?</h2>
+      <p>
+        They weren't born under the golden arches! Discover the Cornell University professor who invented them in 1963 and revolutionized the food world.
+      </p>
+      <a href="history.html" class="btn btn-primary">Read the History & Science 📜</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div>
+        <strong style="color: #f59e0b; font-size: 1.1rem;">The Golden Nugget</strong>
+        <p style="font-size: 0.85rem; margin-top: 0.25rem;">Celebrating crispiness, golden crusts, and delicious dips.</p>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="history.html">History & Science</a>
+        <a href="recipes.html">Sauces & Recipes</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

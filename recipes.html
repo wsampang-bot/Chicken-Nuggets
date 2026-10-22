@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sauces & Recipes | The Golden Nugget</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span>🍗</span>
+        <span>The Golden Nugget</span>
+        <span class="logo-badge">Recipes</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History & Science</a></li>
+          <li><a href="recipes.html" class="active">Sauces & Recipes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Section Title -->
+    <div class="section-title">
+      <h2>The Dipping Sauce Tier List</h2>
+      <p>A chicken nugget is only as legendary as the sauce you plunge it into. Click a sauce below to view pairing notes!</p>
+    </div>
+
+    <!-- Active Sauce Detail Box -->
+    <div id="sauce-active-detail"></div>
+
+    <!-- Sauces Grid -->
+    <div class="sauce-grid" style="margin-top: 1.5rem;">
+      <div class="sauce-card" data-notes="Sweet apricot puree balanced with rice vinegar and mild ginger. Classic all-around crowd favorite." data-heat="None">
+        <div class="sauce-header">
+          <span style="font-size: 1.8rem;">🍯</span>
+          <span class="sauce-badge badge-sweet">Sweet & Tangy</span>
+        </div>
+        <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: #1f2937;">Classic Sweet & Sour</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.4rem;">
+          The undisputed OG dipping sauce. Fruity sweetness cuts right through rich fried coating.
+        </p>
+      </div>
+
+      <div class="sauce-card" data-notes="Creamy whole-grain Dijon folded into clover honey and a touch of lemon zest." data-heat="Mild Zest">
+        <div class="sauce-header">
+          <span style="font-size: 1.8rem;">🐝</span>
+          <span class="sauce-badge badge-tangy">Tangy Sweet</span>
+        </div>
+        <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: #1f2937;">Honey Mustard</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.4rem;">
+          Rich, creamy, and sharp with just enough sweet warmth to coat each nugget crevice.
+        </p>
+      </div>
+
+      <div class="sauce-card" data-notes="Hickory smoke woodiness, dark brown sugar molasses, tomato paste, and crushed black pepper." data-heat="Mild">
+        <div class="sauce-header">
+          <span style="font-size: 1.8rem;">🪵</span>
+          <span class="sauce-badge badge-sweet">Smokey</span>
+        </div>
+        <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: #1f2937;">Smokey Hickory BBQ</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.4rem;">
+          Bold, robust, and deep. Ideal for hearty appetites and extra-crisp nuggets.
+        </p>
+      </div>
+
+      <div class="sauce-card" data-notes="Aged cayenne pepper sauce whisked with warm unsalted butter and wild wildflower honey." data-heat="Medium-Hot 🔥">
+        <div class="sauce-header">
+          <span style="font-size: 1.8rem;">🌶️</span>
+          <span class="sauce-badge badge-spicy">Hot Sweet</span>
+        </div>
+        <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: #1f2937;">Hot Honey Buffalo</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.4rem;">
+          The modern favorite: initial sweet glaze followed by a bold, addictive cayenne sting.
+        </p>
+      </div>
+
+      <div class="sauce-card" data-notes="Cultured buttermilk, fresh dill, roasted garlic cloves, cracked pepper, and grated parmesan." data-heat="Cooling">
+        <div class="sauce-header">
+          <span style="font-size: 1.8rem;">🧄</span>
+          <span class="sauce-badge badge-creamy">Cool & Herby</span>
+        </div>
+        <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: #1f2937;">Garlic Herb Ranch</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.4rem;">
+          Cooling and savory. Provides the perfect temperature and texture contrast to hot fried chicken.
+        </p>
+      </div>
+
+      <div class="sauce-card" data-notes="Japanese egg-rich Kewpie mayonnaise infused with red chili sriracha and roasted sesame oil." data-heat="Spicy 🔥">
+        <div class="sauce-header">
+          <span style="font-size: 1.8rem;">🥢</span>
+          <span class="sauce-badge badge-spicy">Umami Heat</span>
+        </div>
+        <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: #1f2937;">Sriracha Umami Mayo</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.4rem;">
+          Velvety richness with sharp chili fire and rich egg yolk undertones.
+        </p>
+      </div>
+    </div>
+
+    <!-- Homemade Crispy Nugget Recipe Section -->
+    <div class="section-title" style="margin-top: 4rem;">
+      <h2>Make It Yourself: The Ultra-Crisp Recipe</h2>
+      <p>Achieve the exact golden, crunchy batch shown below right in your kitchen.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2.5rem; align-items: start; margin-bottom: 3rem;">
+      <!-- Ingredients list -->
+      <div style="background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow);">
+        <h3 style="font-family: var(--font-heading); color: #78350f; font-size: 1.4rem; margin-bottom: 1rem;">
+          🛒 Ingredients (Serves 3-4)
+        </h3>
+        
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="font-size: 1rem; color: #92400e; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.5px;">The Marinade:</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li><label><input type="checkbox" checked style="accent-color: var(--primary);"> 1.5 lbs chicken breast (cut into bite-sized 1.5-inch cubes)</label></li>
+            <li><label><input type="checkbox" checked style="accent-color: var(--primary);"> 1 cup buttermilk (tenderizes the poultry fibers)</label></li>
+            <li><label><input type="checkbox" checked style="accent-color: var(--primary);"> 2 tbsp dill pickle juice (the secret restaurant umami trick)</label></li>
+            <li><label><input type="checkbox" checked style="accent-color: var(--primary);"> 1 tsp kosher salt & 1/2 tsp black pepper</label></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 1rem; color: #92400e; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.5px;">The Crispy Coating:</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li><label><input type="checkbox" checked style="accent-color: var(--primary);"> 1.5 cups Japanese Panko breadcrumbs</label></li>
+            <li><label><input type="checkbox" checked style="accent-color: var(--primary);"> 1/2 cup all-purpose flour & 2 tbsp cornstarch</label></li>
+            <li><label><input type="checkbox" checked style="accent-color: var(--primary);"> 1 tsp garlic powder & 1 tsp onion powder</label></li>
+            <li><label><input type="checkbox" checked style="accent-color: var(--primary);"> 1 tsp smoked sweet paprika</label></li>
+            <li><label><input type="checkbox" checked style="accent-color: var(--primary);"> Cooking spray / oil for crisping</label></li>
+          </ul>
+        </div>
+
+        <div style="margin-top: 1.5rem; padding: 1rem; background: #fef8ee; border-radius: 10px; border-left: 4px solid var(--primary);">
+          <small style="color: #78350f; font-weight: 600;">💡 Pro Reheating Tip: Never microwave cold nuggets! Pop them in an air fryer or toaster oven at 380°F (190°C) for 3-4 minutes to restore the crispy crackle.</small>
+        </div>
+      </div>
+
+      <!-- Platter picture card -->
+      <div>
+        <div class="hero-image-card">
+          <img src="chicken-nuggets.png" alt="A freshly prepared plate of golden fried chicken nuggets">
+          <div class="image-tag">
+            <span>✨</span> Your Delicious Homemade Target
+          </div>
+        </div>
+        <div style="margin-top: 1rem; text-align: center;">
+          <button class="btn btn-secondary sound-crunch-btn" style="width: 100%; justify-content: center;">
+            Test Bite Crunch Sound 🔊
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step by Step Cooking Guide -->
+    <div class="recipe-steps">
+      <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: #1f2937; margin-bottom: 1.5rem;">
+        👨‍🍳 Step-by-Step Method
+      </h3>
+
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>Marinate for Tenderness</h4>
+          <p>Toss chicken pieces into the buttermilk and pickle juice brine with salt. Let rest for at least 30 minutes (or up to 4 hours in the fridge).</p>
+        </div>
+      </div>
+
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>Double-Coat Dredge</h4>
+          <p>Toss panko and flour with spices. Take chicken from marinade, press firmly into the crumb mix so every crevice is coated with crunchy flakes.</p>
+        </div>
+      </div>
+
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>Cook to Golden Perfection</h4>
+          <p><strong>Air Fryer:</strong> Preheat to 390°F (200°C), spray lightly with oil, and cook for 10-12 minutes, shaking basket at halfway mark. (Or deep fry in 350°F oil for 4-5 minutes until golden brown).</p>
+        </div>
+      </div>
+
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>Rest & Dip</h4>
+          <p>Transfer to a cooling wire rack for 2 minutes to let the steam escape without softening the crust. Serve with your favorite dipping sauce flight!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation CTA -->
+    <section class="cta-banner">
+      <h2>Explore More Nugget Knowledge</h2>
+      <p>
+        Travel through time to see how the chicken nugget was invented, or return back to the home hub.
+      </p>
+      <div style="display:flex; justify-content:center; gap: 1rem; flex-wrap: wrap;">
+        <a href="index.html" class="btn btn-primary">Return to Home 🍗</a>
+        <a href="history.html" class="btn btn-secondary">Explore The History 📜</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div>
+        <strong style="color: #f59e0b; font-size: 1.1rem;">The Golden Nugget</strong>
+        <p style="font-size: 0.85rem; margin-top: 0.25rem;">Sauce pairings and crispy chicken cooking guides.</p>
+      </div>
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="history.html">History & Science</a>
+        <a href="recipes.html">Sauces & Recipes</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
